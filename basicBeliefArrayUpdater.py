@@ -1,4 +1,4 @@
-# Initialize an emptarray for the robot's location belief function
+# Initialize an empty array for the robot's location belief function
 p = [0.2, 0.2, 0.2, 0.2, 0.2]
 # Initialize world
 world = ['green', 'red', 'red', 'green', 'green']

@@ -1,0 +1,515 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"webkit-trans",
+				"-webkit-transform-origin:   (property)"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"blu",
+				"bluegrey"
+			],
+			[
+				"texturetra",
+				"texturetransparent"
+			],
+			[
+				"overflow-",
+				"overflow-y:   (property)"
+			],
+			[
+				"fw",
+				"fw-b	font-weight: bold;"
+			],
+			[
+				"mr",
+				"mr-a	margin-right: auto;"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"align",
+				"-webkit-box-align:   (property)"
+			],
+			[
+				"flo",
+				"float:   (property)"
+			],
+			[
+				"font-",
+				"font-variant:   (property)"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"m",
+				"middle  (value)"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"min-wid",
+				"min-width:   (property)"
+			],
+			[
+				"mh",
+				"min-height"
+			],
+			[
+				"mw",
+				"min-width:   (property)"
+			],
+			[
+				"ma",
+				"maroonbg"
+			],
+			[
+				"colo",
+				"color:   (property)"
+			],
+			[
+				"table-",
+				"table-cell"
+			],
+			[
+				"displ",
+				"display:   (property)"
+			],
+			[
+				"ff-",
+				"ff-ss	font-family: sans-serif;"
+			],
+			[
+				"ab",
+				"absolute  (value)"
+			],
+			[
+				"webkit-back",
+				"-webkit-background-size:   (property)"
+			],
+			[
+				"backgro",
+				"background-size"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"300",
+				"300  (value)"
+			],
+			[
+				"font-w",
+				"font-weight:   (property)"
+			],
+			[
+				"text-a",
+				"text-align:   (property)"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"i",
+				"id	Attr"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"wid",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"package control:upgrade/over",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"overw",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color picker"
+			],
+			[
+				"color",
+				"Color picker"
+			],
+			[
+				"ab",
+				"About"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"add",
+				"Git: Add & Commit…"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git",
+				"Git: Commit All…"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"package control",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"gitadd",
+				"Git: Add & Commit…"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"emmet",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"toggle side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"package up",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			]
+		],
+		"width": 504.0
+	},
+	"console":
+	{
+		"height": 478.0,
+		"history":
+		[
+			"git push",
+			"import configHelper",
+			"exit()",
+			"help",
+			"help()",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Users/sam/tech projects/ai-for-robotics-course/basicBeliefArrayUpdater.py",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/sam/tech projects/ai-for-robotics-course/basicBeliefArrayInitialiser.py",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
+		"/Users/sam/tech projects/trenches-history-project/sass/main.scss",
+		"/Users/sam/tech projects/trenches-history-project/index.html",
+		"/Users/sam/tech projects/SidebarTransitions/index.html",
+		"/Users/sam/tech projects/SidebarTransitions/js/sidebarEffects.js",
+		"/Users/sam/tech projects/SidebarTransitions/css/component.css",
+		"/Users/sam/tech projects/SG60/sass/style.scss",
+		"/Users/sam/tech projects/SG60/sass/home.scss",
+		"/Users/sam/tech projects/trenches-history-project/config.rb~",
+		"/Users/sam/tech projects/trenches-history-project/sass/normalize.css",
+		"/Users/sam/tech projects/trenches-history-project/README.md",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/User/Compass.sublime-build",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/User/compass.sublime-build",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/MacTerminal/MacTerminal.sublime-settings",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/User/MacTerminal.sublime-settings",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/Users/sam/tech projects/trenches-history-project/thing.md",
+		"/Users/sam/git/stacksort/exampleconfig.conf",
+		"/Users/sam/git/stacksort/configHelper.py",
+		"/Users/sam/git/stacksort/.gitignore",
+		"/Users/sam/git/stacksort/main.py",
+		"/Users/sam/Solarized-Light.dvtcolortheme",
+		"/Users/sam/Solarized-Dark.dvtcolortheme",
+		"/Users/sam/Solarized-Dark.dvtcolortheme.txt",
+		"/Users/sam/Desktop/Solarized-Dark.dvtcolortheme.txt",
+		"/Users/sam/git/raspberrypi-os/kernel.ld",
+		"/Users/sam/git/raspberrypi-os/LICENSE"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"st-effect-9",
+			"span",
+			"border-radius: 10px;",
+			"auto",
+			"}\n",
+			"wrap",
+			"wordwrap",
+			"position",
+			"<div id=\"organisation\" class=\"slide\">\n        <p>stuff!!!</p>\n    </div>",
+			"disease",
+			"intro",
+			"=\"\"></"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"navpanel",
+			"h1",
+			"-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius: 10px;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 178.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"project": "ai-for-robotics.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"sass/main.scss"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"main",
+				"sass/main.scss"
+			],
+			[
+				"mai",
+				"sass/main.scss"
+			],
+			[
+				"conf",
+				"configHelper.py"
+			],
+			[
+				"exam",
+				"exampleconfig.conf"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 153.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

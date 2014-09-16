@@ -3,7 +3,7 @@ p = [0.2, 0.2, 0.2, 0.2, 0.2]
 # Initialize world
 world = ['green', 'red', 'red', 'green', 'green']
 # Sensor result array
-measurements = ['red']
+measurements = ['red', 'red', 'green']
 # Sensor reliabilities since sensing is not perfect
 pHit = 0.6
 pMiss = 0.2
@@ -16,12 +16,10 @@ def sense(p, Z):
 
 		# Set hit to 1 if Z equals world[i] tile colour, else Z = 0
 		hit = (Z == world[i])
-		print hit
 
 		# Append a belief to q for each tile. If hit == 1, then
 		# q[i]=p[i]*pHit, else q[i]=p[i]*pMiss
 		q.append(p[i] * (hit * pHit + (1 - hit) * pMiss))
-		print q
 
 	a = sum(q)
 
@@ -31,7 +29,7 @@ def sense(p, Z):
 
 	return q
 
-for k in range(len(measurements)):
+for k in measurements:
 	p = sense(p, k)
 
 print p

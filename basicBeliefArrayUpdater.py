@@ -1,12 +1,27 @@
-# Initialize an empty array for the robot's location belief function
+##
+##  basicBeliefArrayUpdater.py
+##
+##  A basic program that updates a location belief array for a simple
+##  robot in a simple world...
+##
+##  copyright © Sam Greening 2014
+##
+#######################################################################
+
+# Initialize an array for the robot's location belief function in a
+# state of maximum confusion
 p = [0.2, 0.2, 0.2, 0.2, 0.2]
 # Initialize world
 world = ['green', 'red', 'red', 'green', 'green']
 # Sensor result array
-measurements = ['red', 'red', 'green']
+measurements = ['red']
 # Sensor reliabilities since sensing is not perfect
 pHit = 0.6
 pMiss = 0.2
+# Movement reliabilities
+pExact = 0.8
+pOvershoot = 0.1
+pUndershoot = 0.1
 
 def sense(p, Z):
 
@@ -29,7 +44,15 @@ def sense(p, Z):
 
 	return q
 
-for k in measurements:
-	p = sense(p, k)
+def move(p, U):
+	q = []
+	for i in range(len(p)):
+		q.append(p[i - U] * pExact + p[i - (U + 1)] * pOvershoot + p[i - (U - 1)] * pUndershoot)
+	return q
+
+for i in measurements:
+	p = sense(p, i)
+
+p = move(p, 1)
 
 print p

@@ -1,8 +1,9 @@
 # Initialize an array containing the robot's location belief function.
-p = [0, 1, 0, 0, 0]
+p = [0.2, 0.2, 0.2, 0.2, 0.2]
 
 world = ['green', 'red', 'red', 'green', 'green']
 measurements = ['red', 'green']
+motions = [1, 1]
 
 # Sensor accuracy
 pHit = 0.6
@@ -26,10 +27,9 @@ def sense(belief_function, measurement):
     q = []
     for i in range(len(belief_function)):
         hit = (measurement == world[i])
-    q.append(belief_function[i] * (hit * pHit + (1 - hit) * pMiss))
+        q.append(belief_function[i] * (hit * pHit + (1 - hit) * pMiss))
     s = sum(q)
-    for i in range(len(q)):
-        q[i] = q[i] / s
+    q = [i / s for i in q]
     return q
 
 
@@ -44,12 +44,14 @@ def move(belief_function, movement):
     q = []
     for i in range(len(belief_function)):
         q.append(belief_function[i - movement] * pExact
-                 + belief_function[i - (movement + 1)] * pOvershoot
-                 + belief_function[i - (movement - 1)] * pUndershoot)
+                 + belief_function[(i - (movement + 1)) % len(belief_function)] * pOvershoot
+                 + belief_function[(i - (movement - 1)) % len(belief_function)] * pUndershoot)
     return q
 
 
-# Move twice
-p = (move(move(p, 1), 1))
+# Move robot
+for k in range(len(measurements)):
+    p = sense(p, measurements[k])
+    p = move(p, motions[k])
 
 print p

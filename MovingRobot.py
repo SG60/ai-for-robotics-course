@@ -14,13 +14,13 @@ pUndershoot = 0.1
 pOvershoot = 0.1
 
 
-def sense(belief_function: [int], measurement: str) -> [int]:
+def sense(belief_function, measurement):
     """
     Produce a belief function based on a measurement.
 
-    :param belief_function:
-    :param measurement:
-    :return:
+    :type belief_function: list[int]
+    :type measurement: str
+    :rtype : list[int]
     """
 
     q = []
@@ -33,13 +33,13 @@ def sense(belief_function: [int], measurement: str) -> [int]:
     return q
 
 
-def move(belief_function: [int], movement: int) -> [int]:
+def move(belief_function, movement):
     """
     Produce a belief function based on a movement.
 
-    :param belief_function:
-    :param movement:
-    :return:
+    :type belief_function: list[int]
+    :type movement: int
+    :rtype : list[int]
     """
     q = []
     for i in range(len(belief_function)):
@@ -52,4 +52,4 @@ def move(belief_function: [int], movement: int) -> [int]:
 # Move twice
 p = (move(move(p, 1), 1))
 
-print(move(p, 1))
+print p
